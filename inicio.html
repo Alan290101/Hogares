@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <form action="procesar_login.php" method="post">
+            <label for="correo">Correo:</label>
+            <input type="text" id="correo" name="correo" required>
+            
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+            
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+        
+        <!-- Botón de regreso -->
+        <a href="Index.html" class="back-button">Regresar</a>
+    </div>
+</body>
+</html>

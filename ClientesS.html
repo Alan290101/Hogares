@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Satisfechos </title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="Clientes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            width: 100%; /* Ocupa el 100% del ancho del contenedor */
+            height: 400px; /* Altura deseada para el mapa */
+        }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-carousel').slick({
+                infinite: true,
+                slidesToShow: 3, // Número de imágenes a mostrar en cada slide
+                slidesToScroll: 1, // Número de imágenes a desplazar por vez
+                autoplay: true, // Reproducción automática
+                autoplaySpeed: 1500 // Velocidad de reproducción automática en milisegundos
+            });
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+
+    <div class="menu container">
+        <a href="#">
+            <img src="imagenes/Img.jpg" alt="Logo" class="logo-img"> 
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Aviso de privacidad.html">Aviso de Privacidad</a></li>
+                <li><a href="ClientesS.html">Clientes Satisfechos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="clientes-satisfechos">
+        <h2>Clientes Satisfechos</h2>
+        <p>En Hogares en Concreto S Y D nos seguimos capacitando 
+          para ofrecer a nuestros clientes el mejor servicio  y asesoramiento 
+          en sus tramites inmobiliarios, para nosotros, es un placer
+          poder servirles
+        </p>
+        <p>¡Gracias por su confianza 🤝🏼!</p>
+        <div class="slick-carousel">
+          <div class="image-item">
+            <img src="imgclientesS/img1.jpeg" alt="Cliente 1 - Imagen 1">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img3.jpeg" alt="Cliente 1 - Imagen 3">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img6.jpeg" alt="Cliente 1 - Imagen 6">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img8.jpeg" alt="Cliente 1 - Imagen 8">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img9.jpeg" alt="Cliente 1 - Imagen 9">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img12.jpeg" alt="Cliente 1 - Imagen 12">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img14.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img15.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img16.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img17.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img18.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img19.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img21.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img22.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img24.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img25.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+          <div class="image-item">
+            <img src="imgclientesS/img26.jpeg" alt="Cliente 1 - Imagen 14">
+          </div>
+        </div>
+      </section>
+    <footer class="footer container">
+        <div class="footer-content">
+            <div class="footer-form">
+                <h2>Contactanos</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input class="campo" type="text" id="nombre" placeholder="Nombre">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input class="campo" type="email" id="correo" placeholder="Correo">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="campo" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+            
+                    <input class="btn-2" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="footer-txt">
+              <div class="social-icons">
+                  <p>
+                      <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5550982772" target="_blank">5550982772</a>
+                  </p>
+                  <p>
+                      <i class="far fa-envelope"></i> atencionaclientes@hogaresenconcretosyd.com
+                  </p>
+                  <p>
+                      <i class="fas fa-map-marker-alt"></i> Calle Verdines 55,
+                      Col. Parque Residencial Coacalco,
+                      Coacalco, 55720, México
+                  </p>
+                  <p>
+                      <a href="https://www.facebook.com/alan.bay.10?mibextid=ZbWKwL" target="_blank">
+                          <i class="fab fa-facebook"></i> Síguenos en Facebook
+                      </a>
+                  </p>
+                  <div id="map"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <script>
+            // Inicializa el mapa
+            var map = L.map('map').setView([19.619591, -99.083116], 17);
+    
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+    
+            // marcador con las coordenadas especificadas
+            var marker = L.marker([19.619591, -99.083116]).addTo(map);
+    
+             //personalizar el marcador con un ícono o una descripción
+             var marker = L.marker([19.619591, -99.083116], {
+                 icon: L.icon({
+                     iconUrl: 'imagenes/Img.jpg',
+                    iconSize: [32, 32]
+                 }),
+                 title: 'Hogares en concreto'
+             }).addTo(map);
+        </script>
+    </footer>
+     <!--API DE CHAT-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/652f316ba84dd54dc482563d/1hd05i3i5';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  
+
+</body>
+</html>

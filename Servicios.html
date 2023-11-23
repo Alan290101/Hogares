@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios </title>
+    <link rel="stylesheet" href="Servicios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            width: 100%; /* Ocupa el 100% del ancho del contenedor */
+            height: 400px; /* Altura deseada para el mapa */
+        }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+<header class="header">
+
+    <div class="menu container">
+        <a href="#">
+            <img src="imagenes/Img.jpg" alt="Logo" class="logo-img"> 
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Aviso de privacidad.html">Aviso de Privacidad</a></li>
+                <li><a href="ClientesS.html">Clientes Satisfechos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Servicios</h1>
+    
+        <section class="service">
+            <h2>Compra y Venta de Bienes Raíces</h2>
+            <div class="service-details">
+                <div class="service-image" style="background-image: url('imagenes/img2.jpg');"></div>
+                <div class="service-description">
+                    <p>Compramos tu vivienda aún con deuda,</p>
+                    <p>Nosotros te ayudamos a vender tu vivienda, Contactanos y recibe una oferta.</p>
+                    <p> Te ayudamos a vender sin que tú te desgastes en procesos engorrosos (nosotros hacemos todo por ti).
+                        </p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="service">
+            <h2>Recuperación de Saldos de Subcuenta de Vivienda</h2>
+            <div class="service-details">
+                <div class="service-image" style="background-image: url('imagenes/img3.jpg');"></div>
+                <div class="service-description">
+                    <p>¡Capitalizate inmediatamente!</p>
+                    <p>Con la recuperación de saldo de subcuenta</p>
+                    <p> Requisitos:</p>
+                    <p><ul>
+                        <li>Estar vigente</li>
+                        <li>Estar laborando actualmente</li>
+                        <li>Contar con 1080 puntos</li>
+                        <li>Tener 150,000 pesos en el saldo de subcuenta</li>
+                      </ul>
+                        </p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="service">
+            <h2>Gestoría</h2>
+            <div class="service-details">
+                <div class="service-image" style="background-image: url('imagenes/img4.jpg');"></div>
+                <div class="service-description">
+                    <ul>
+                        <li>Trámites notariales</li>
+                        <li>Cancelaciones de hipoteca</li>
+                        <li>Juicios, testamentarios, intestamentarios, usucapión, etc...</li>
+                      </ul>
+                      <p>¡Regularizamos tu vivienda!</p>
+                </div>
+            </div>
+        </section>
+    </div>    
+    <footer class="footer container">
+        <div class="footer-content">
+            <div class="footer-form">
+                <h2>Contactanos</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input class="campo" type="text" id="nombre" placeholder="Nombre">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input class="campo" type="email" id="correo" placeholder="Correo">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="campo" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+            
+                    <input class="btn-2" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="footer-txt">
+                <div class="social-icons">
+                    <p>
+                        <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5550982772" target="_blank">5550982772</a>
+                    </p>
+                    <p>
+                        <i class="far fa-envelope"></i> atencionaclientes@hogaresenconcretosyd.com
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Calle Verdines 55,
+                        Col. Parque Residencial Coacalco,
+                        Coacalco, 55720, México
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/alan.bay.10?mibextid=ZbWKwL" target="_blank">
+                            <i class="fab fa-facebook"></i> Síguenos en Facebook
+                        </a>
+                    </p>
+                    <div id="map"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <script>
+            // Inicializa el mapa
+            var map = L.map('map').setView([19.619591, -99.083116], 17);
+    
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+    
+            // marcador con las coordenadas especificadas
+            var marker = L.marker([19.619591, -99.083116]).addTo(map);
+    
+             //personalizar el marcador con un ícono o una descripción
+             var marker = L.marker([19.619591, -99.083116], {
+                 icon: L.icon({
+                     iconUrl: 'imagenes/Img.jpg',
+                    iconSize: [32, 32]
+                 }),
+                 title: 'Hogares en concreto'
+             }).addTo(map);
+        </script>
+
+    </footer>
+   <!--API DE CHAT-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/652f316ba84dd54dc482563d/1hd05i3i5';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+</body>
+</html>

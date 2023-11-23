@@ -1,0 +1,272 @@
+body {
+  background: linear-gradient(to bottom, #FFFFFF, #FFA500, #000000); /* Fondo con gradiente */
+  margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  font-family: Arial, sans-serif; /* Cambia la fuente de texto si es necesario */
+  color: #333; /* Color de texto predeterminado */
+}
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  .header {
+    background-color: #fdda99;
+    color: #0f0f0f;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+  }
+  
+  .header p {
+    font-size: 18px;
+  }
+  
+  /* Estilos del menú de navegación */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-icono {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+/* Estilos para la imagen de logo */
+.logo-img {
+  max-width: 100px; /* Ancho máximo de la imagen de logo */
+  height: auto; /* Mantener la relación de aspecto */
+  display: block; /* Para centrar la imagen horizontalmente */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+  /* Estilos para el menú */
+.menu {
+  background-color: #181817; /* Color de fondo naranja para el menú */
+  padding: 10px 0; /* Espaciado en la parte superior e inferior */
+  background-image: none; /* Elimina cualquier imagen de fondo existente */
+}
+
+
+
+.header-content h1 {
+  font-size: 36px; /* Tamaño de fuente para el título */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 3px; /* Espaciado entre letras */
+}
+
+/* Estilos para la sección "Bienvenidos a Hogares en Concreto S Y D" */
+.header-txt {
+  background-color: #faf8f8; /* Color de fondo para la sección */
+  padding: 40px 0; /* Espaciado en la parte superior e inferior */
+  text-align: center;
+}
+
+.header-txt h2 {
+  font-size: 28px; /* Tamaño de fuente para el título */
+  color: #0e0d0d; /* Color de texto para el título */
+}
+
+.header-txt p {
+  font-size: 18px; /* Tamaño de fuente para la descripción */
+  color: #050505; /* Color de texto para la descripción */
+}
+  
+  /* Estilos de las secciones */
+  /* Estilos para la sección de dirección */
+/* Estilos para la sección de dirección */
+.direccion {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente los elementos */
+  background-color: #fcfbfa; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px;
+}
+
+.direccion h2 {
+  font-size: 28px; /* Tamaño de fuente para el título */
+  color: #333; /* Color de texto para el título */
+  margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+}
+
+.direccion p {
+  font-size: 18px; /* Tamaño de fuente para el párrafo */
+  color: #0e0d0d; /* Color de texto para el párrafo */
+  text-align: center; /* Alinea el párrafo al centro */
+}
+  
+  
+/* Estilos para la sección "¿Qué Hacemos?" */
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 24px; /* Tamaño de fuente para el título */
+  color: #333; /* Color del texto del título */
+  margin-bottom: 20px; /* Espacio entre el título y las imágenes */
+}
+
+.about-img {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.about-item {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre cada elemento */
+}
+
+/* Ajustar el tamaño de las imágenes en los elementos "about-item" */
+.about-item img {
+  max-width: 500px; /* Cambiar el tamaño de las imágenes según tus preferencias */
+  height: auto;
+}
+
+.about-item h3 {
+  font-size: 20px; /* Tamaño de fuente para los títulos de servicios */
+  color: #0d0e0e; /* Color de texto para los títulos de servicios (puedes personalizarlo) */
+  margin-top: 20px; /* Espacio entre la imagen y el título del servicio */
+}
+
+
+  
+ /* Estilos del pie de página */
+.footer {
+  background-color: #0f0f0f; /* Fondo del pie de página */
+  color: #fff; /* Texto del pie de página */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilos de los iconos sociales */
+.social-icons i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #fff;
+}
+  
+ /* Estilos para la sección "Especialistas en Crédito INFONAVIT, FOVISSSTE, BANCARIOS Y Otros." */
+.about2-img {
+    background-image: url('imagenes/img6.jpg');
+    background-size: cover; /* Ajusta según tus preferencias */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px; /* Ajusta según tus preferencias */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .about2-text {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el texto */
+    padding: 20px;
+    max-width: 70%; /* Ajusta según tus preferencias */
+    border-radius: 10px;
+  }
+  
+  .about2-text h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  /* Estilos para las etiquetas de los campos */
+label {
+  display: block; /* Coloca cada etiqueta en una nueva línea */
+  margin-bottom: 5px; /* Espacio entre cada etiqueta y el campo de entrada */
+  font-weight: bold; /* Puedes hacer que las etiquetas sean más audibles */
+}
+  
+ /* Estilos para el encabezado y el menú en dispositivos móviles */
+ @media (max-width: 768px) {
+  .navbar {
+    display: none;
+    background-color: #333;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .navbar a {
+    color: #fff; /* Color de texto para las opciones de menú */
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  #menu:checked + .navbar {
+    display: flex;
+  }
+
+  /* Ajustar el tamaño del logo en dispositivos móviles */
+  .logo-img {
+    max-width: 80px;
+  }
+
+  /* Ajustar el tamaño de las imágenes en la sección "¿Qué Hacemos?" en dispositivos móviles */
+  .about-item img {
+    max-width: 100%; /* Haz que las imágenes ocupen el ancho completo */
+  }
+
+  /* Ajustar el tamaño de la fuente para el título en la sección "¿Qué Hacemos?" en dispositivos móviles */
+  .about h2 {
+    font-size: 20px;
+  }
+
+  /* Ajustar el tamaño de la fuente para el título en la sección de bienvenida en dispositivos móviles */
+  .header-content h1 {
+    font-size: 24px;
+  }
+}

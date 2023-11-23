@@ -1,0 +1,328 @@
+/* Estilo general */
+body {
+    background: linear-gradient(to bottom, #FFFFFF, #FFA500, #000000); /* Fondo con gradiente */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    font-family: Arial, sans-serif; /* Cambia la fuente de texto si es necesario */
+    color: #333; /* Color de texto predeterminado */
+  }
+  /* Estilos del menú de navegación */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-icono {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+/* Estilos para la imagen de logo */
+.logo-img {
+  max-width: 100px; /* Ancho máximo de la imagen de logo */
+  height: auto; /* Mantener la relación de aspecto */
+  display: block; /* Para centrar la imagen horizontalmente */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+  /* Estilos para el menú */
+.menu {
+  background-color: #181817; /* Color de fondo naranja para el menú */
+  padding: 10px 0; /* Espaciado en la parte superior e inferior */
+  background-image: none; /* Elimina cualquier imagen de fondo existente */
+}
+/* Estilo para el menú desplegable */
+.menu-desplegable {
+  
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Estilo para la lista de elementos */
+.menu-lista {
+  list-style: none; /* Quita los marcadores de lista */
+  padding: 0;
+}
+
+/* Estilo para cada elemento de la lista */
+.menu-item {
+  background-size: cover; /* Ajustar la imagen de fondo al elemento */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50px;
+  padding: 20px;
+  text-align: center;
+  color: #fff; /* Color del texto */
+  margin-bottom: 10px;
+  border: 2px solid #fff; /* Borde blanco */
+  display: flex; /* Usar flexbox para centrar vertical y horizontalmente */
+  flex-direction: column; /* Apilar elementos en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+/* Estilo para el texto dentro de los elementos */
+.menu-item a {
+  font-size: 40px; /* Tamaño de fuente más grande */
+  text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+/* Estilo para los fondos individuales */
+.tultepec {
+  background-image: url('imagenesMunicipios/imgn.jpg'); /* Agrega la ruta de la imagen para Ecatepec */
+}
+
+.tultitlan {
+  background-image: url('imagenesMunicipios/imgn.jpg'); /* Agrega la ruta de la imagen para Tecamac */
+}
+
+.jaltenco {
+  background-image: url('imagenesMunicipios/imgn.jpg'); /* Agrega la ruta de la imagen para Tlalnepantla */
+}
+
+.coacalco {
+  background-image: url('imagenesMunicipios/imgn.jpg'); /* Agrega la ruta de la imagen para Coacalco */
+}
+
+/*.ojo-de-agua {
+  background-image: url('imagenesMunicipios/imgn.jpg'); /* Agrega la ruta de la imagen para Ojo de Agua */
+
+.header-content h1 {
+  font-size: 36px; /* Tamaño de fuente para el título */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 3px; /* Espaciado entre letras */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Menú desplegable */
+.menu-desplegable ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #f8f6f6;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-item:hover a {
+    color: #f3a455; /* Color naranja al pasar el cursor */
+}
+
+/* Contenido de cada sección */
+.seccion {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-fondo {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagen-fondo h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Estilo para las imágenes de casas en el carrusel */
+.casa-imagen {
+  max-width: 500px; /* Cambia el valor según el tamaño deseado */
+  height: auto; /* Mantener la relación de aspecto */
+}
+
+/* Estilo para el carrusel de casas */
+.carrusel-casa {
+  max-width: 5000px; /* Ancho máximo del carrusel */
+  margin: 5 auto; /* Centra el carrusel horizontalmente */
+}
+
+/* Estilo para las imágenes de casas en el carrusel */
+.casa-imagen {
+  max-width: 100%; /* Ancho máximo de las imágenes */
+  height: auto; /* Mantener la relación de aspecto */
+}
+/* Estilos CSS para la galería de imágenes */
+.clients-satisfechos {
+  text-align: center; /* Centrar el contenido en el contenedor */
+}
+.slick-carousel {
+  display: flex;
+  justify-content: space-between; /* Espacio uniformemente las imágenes */
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten al ancho del contenedor */
+}
+
+.image-item {
+  flex-basis: calc(33.33% - 20px); /* Establece el ancho de cada imagen (ajústalo según tus necesidades) */
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-item img {
+
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  max-height: 300px; /* Establece la altura máxima de las imágenes (ajústalo según tus necesidades) */
+  border: 2px solid #111111; /* Agrega un borde a las imágenes si lo deseas */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre la imagen */
+}
+
+.image-item:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al 110% cuando el mouse se coloca sobre la imagen */
+}
+
+/* Estilos adicionales para el contenedor y títulos/descripciones (si es necesario) */
+.clients-satisfechos h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilo para las características de las casas en el carrusel */
+.caracteristicas {
+  background-color: #fcf8f8; /* Color de fondo para las características */
+  padding: 10px; /* Espaciado interno para las características */
+  text-align: center; /* Centra el texto */
+}
+
+
+/* Estilos para las imágenes de casas en el carrusel */
+.casa-imagen {
+  max-width: 300px; /* Cambia el valor según el tamaño deseado */
+  height: auto; /* Mantener la proporción de aspecto */
+}
+
+/* Estilo para el carrusel de casas */
+.carrusel-casa {
+  max-width: 300px; /* Ancho máximo del carrusel */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+/* Ajusta el margen para dar espacio entre las imágenes en el carrusel */
+.carrusel-casa .casa-imagen {
+  margin-right: 20px; /* Espacio horizontal entre imágenes */
+}
+
+/* Ajusta el ancho de cada imagen en el carrusel */
+.slick-slide {
+  width: 300px; /* Cambia el valor según el tamaño deseado */
+  margin-right: 10px; /* Espacio horizontal entre imágenes en el carrusel */
+}
+
+/* Asegura que solo se muestre una imagen a la vez en el carrusel */
+.slick-slide:not(.slick-current) {
+  opacity: 0.5; /* Reduce la opacidad de las imágenes no seleccionadas */
+  transform: scale(0.8); /* Reduce el tamaño de las imágenes no seleccionadas */
+  transition: opacity 0.3s, transform 0.3s; /* Agrega una transición suave */
+}
+
+/* Asegura que la imagen actual esté completamente visible */
+.slick-slide.slick-current {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+
+
+/* Pie de página */
+.footer {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Estilos para el encabezado y el menú en dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    background-color: #333;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .navbar a {
+    color: #fff; /* Color de texto para las opciones de menú */
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  #menu:checked + .navbar {
+    display: flex;
+  }
+
+  /* Ajustar el tamaño del logo en dispositivos móviles */
+  .logo-img {
+    max-width: 80px;
+  }
+
+  /* Ajustar el tamaño de las imágenes en la sección "¿Qué Hacemos?" en dispositivos móviles */
+  .about-item img {
+    max-width: 100%; /* Haz que las imágenes ocupen el ancho completo */
+  }
+
+  /* Ajustar el tamaño de la fuente para el título en la sección "¿Qué Hacemos?" en dispositivos móviles */
+  .about h2 {
+    font-size: 20px;
+  }
+
+  /* Ajustar el tamaño de la fuente para el título en la sección de bienvenida en dispositivos móviles */
+  .header-content h1 {
+    font-size: 24px;
+  }
+}

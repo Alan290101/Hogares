@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOGARES EN CONCRETO </title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            width: 100%; /* Ocupa el 100% del ancho del contenedor */
+            height: 400px; /* Altura deseada para el mapa */
+        }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+<header class="header">
+
+    <div class="menu container">
+        <a href="#">
+            <img src="imagenes/Img.jpg" alt="Logo" class="logo-img"> 
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Aviso de privacidad.html">Aviso de Privacidad</a></li>
+                <li><a href="ClientesS.html">Clientes Satisfechos</a></li>
+                <li><a href="inicio.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-content container">
+        <h1>HOGARES EN CONCRETO S Y D S. DE R.L. DE C.V</h1>
+    </div>
+
+    </div>
+</header>
+<section class="direccion container">
+    <h2>Bienvenido a Hogares en Concreto S Y D S</h2>
+        <p>
+            Somos una empresa dedicada a la compra y venta de bienes raíces, recuperación de saldos
+            de subcuenta de vivienda, gestoría y más.
+        </p>
+</section>
+    <section class="about container">
+        <div class="about-img">
+            <h2>¿Qué Hacemos?</h2>
+            <div class="about-item">
+                <img src="imagenes/img2.jpg" alt="">
+                <h3>Compra y Venta de Bienes Raíces</h3>
+            </div>
+            <div class="about-item">
+                <img src="imagenes/img3.jpg" alt="">
+                <h3>Recuperación de Saldos de Subcuenta de Vivienda</h3>
+            </div>
+            <div class="about-item">
+                <img src="imagenes/img4.jpg" alt="">
+                <h3>Gestoría</h3>
+            </div>
+        </div>
+    </section>
+      
+    <section class="about2 container">
+        <div class="about2-img">
+            <div class="about2-text">
+                <h2>Especialistas en Crédito INFONAVIT, FOVISSSTE, BANCARIOS Y Otros.</h2>
+            </div>
+        </div>
+    </section>
+    <footer class="footer container">
+        <div class="footer-content">
+            <div class="footer-form">
+                <h2>Contactanos</h2>
+                <form action="contactanos.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input class="campo" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input class="campo" type="email" id="correo" name="correo" placeholder="Correo">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="campo" id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+            
+                    <input class="btn-2" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="footer-txt">
+                <div class="social-icons">
+                    <p>
+                        <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5550982772" target="_blank">5550982772</a>
+                    </p>
+                    <p>
+                        <i class="far fa-envelope"></i> atencionaclientes@hogaresenconcretosyd.com
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Calle Verdines 55,
+                        Col. Parque Residencial Coacalco,
+                        Coacalco, 55720, México
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/alan.bay.10?mibextid=ZbWKwL" target="_blank">
+                            <i class="fab fa-facebook"></i> Síguenos en Facebook
+                        </a>
+                    </p>
+                    <div id="map"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <script>
+            // Inicializa el mapa
+            var map = L.map('map').setView([19.619591, -99.083116], 17);
+    
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+    
+            // marcador con las coordenadas especificadas
+            var marker = L.marker([19.619591, -99.083116]).addTo(map);
+    
+             //personalizar el marcador con un ícono o una descripción
+             var marker = L.marker([19.619591, -99.083116], {
+                 icon: L.icon({
+                     iconUrl: 'imagenes/Img.jpg',
+                    iconSize: [32, 32]
+                 }),
+                 title: 'Hogares en concreto'
+             }).addTo(map);
+        </script>
+    </footer>
+    
+    <script src="index.js"></script>
+
+    <!--API DE CHAT-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/652f316ba84dd54dc482563d/1hd05i3i5';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    
+
+
+</body>
+</html>

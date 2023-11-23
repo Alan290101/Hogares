@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos </title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="Productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+       #map {
+            width: 100%; /* Ocupa el 100% del ancho del contenedor */
+            height: 400px; /* Altura deseada para el mapa */
+        }
+      .map-container {
+        width: 100%; /* Ancho deseado para el mapa */
+    height: 400px; /* Altura deseada para el mapa */
+    margin-top: 5px; /* Espacio entre el mapa y las características */
+      }
+
+      .small-map {
+          width: 100%; /* Ancho del mapa más pequeño */
+          height: 300px; /* Altura fija del mapa más pequeño */
+          float: left; /* Coloca los mapas pequeños en una fila */
+          margin-right: 10px; /* Espacio entre los mapas pequeños */
+      }
+  </style>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+</head>
+<body>
+<header class="header">
+
+    <div class="menu container">
+        <a href="#">
+            <img src="imagenes/Img.jpg" alt="Logo" class="logo-img"> 
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Aviso de privacidad.html">Aviso de Privacidad</a></li>
+                <li><a href="ClientesS.html">Clientes Satisfechos</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <!-- Menú desplegable -->
+        <nav class="menu-desplegable">
+            <ul>
+                <li class="menu-item tultepec"><a href="#" onclick="mostrarSeccion('tultepec')">TULTEPEC</a></li>
+                <li class="menu-item tultitlan"><a href="#" onclick="mostrarSeccion('tultitlan')">TULTITLAN</a></li>
+                <li class="menu-item jaltenco"><a href="#" onclick="mostrarSeccion('jaltenco')">JALTENCO</a></li>
+                <li class="menu-item coacalco"><a href="#" onclick="mostrarSeccion('coacalco')">COACALCO</a></li>
+                <!-- <li class="menu-item ojo-de-agua"><a href="#" onclick="mostrarSeccion('ojo-de-agua')">Ojo de Agua</a></li>-->
+            </ul>
+        </nav>
+        <!-- Sección TULTEPEC -->
+<section class="seccion" id="tultepec-seccion">
+    <!-- Casa 1 en TULTEPEC -->
+    <div class="casa">
+        <div class="carrusel-casa">
+            <img src="imgTultepec/imgCasa1/img1.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img2.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img3.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img4.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img5.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img6.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img7.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img8.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img9.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img10.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img11.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img12.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img13.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img14.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img15.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img16.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img17.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img18.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img19.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img20.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img21.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img22.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img23.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img24.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img25.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img26.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img27.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img28.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img29.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img30.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img31.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+            <img src="imgTultepec/imgCasa1/img32.jpeg" alt="Casa tultepec 1 " class="casa-imagen">
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+      
+        <!-- Características de Casa 1 en tultepec -->
+        <div class="caracteristicas">
+          <h3>Características:</h3>
+          <ul>
+            <li><strong> 📍65m² de superficie de construcción 
+                    📍60m² de terreno.</strong></li>
+            <li><strong>✨ Precio de venta ✨</strong> $950,000.00</li>
+            <li><strong>Categoría:</strong> casa en venta</li>
+            <li><strong>Ubicación:</strong> portal san Pablo Tultepec</li>
+            <li><strong>🌿 Distribución 🌿:</strong>
+                ✔️Espacio de sala-comedor 
+                ✔️Espacio para colocar Medio baño
+                ✔️Espacio de cocina 
+                ✔️1 patio de servicio 
+                ✔️1 cajón de estacionamiento 
+                ✔️2 Recamaras con espacio de closet
+                ✔️1 baño completo </li>
+                <li><strong>🍂 Equipamiento 🍂:</strong>
+                    ✔️Protecciones en puertas y Ventanas</li>
+                    <li><strong>🌠 Formas de compra 🌠:</strong>
+                        ✔️todos los créditos </li>
+            <!-- Agrega más características si es necesario -->
+          </ul>
+        </div>
+        <div class="map-container">
+          <div class="small-map" id="small-map1"></div>
+      </div>
+      </div>
+      
+    <!-- Casa 2 en tultepec -->
+</section>
+<section class="seccion" id="tultitlan-seccion">
+    <!-- Casa 1 en TULTITLAN -->
+    <div class="casa">
+        <div class="carrusel-casa">
+          <img src="imgTultitlan/imgCasa1/img1.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img2.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img3.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img4.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img5.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img6.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img7.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img8.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img9.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img10.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img11.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img12.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img13.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img14.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img15.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img16.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img17.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img18.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img19.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img20.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img21.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img22.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <img src="imgTultitlan/imgCasa1/img23.jpeg" alt="Casa tultitlan 1 " class="casa-imagen">
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+      
+        <!-- Características de Casa 1 en TULTITLAN -->
+        <div class="caracteristicas">
+          <h3>Características:</h3>
+          <ul>
+            <li><strong>🏡 *Hermosa Casa en Real del Bosque  Tultitlan * 🏡</strong></li>
+            <li><strong> 🌿72 metros de  terreno
+                135 mts de construcción.</strong></li>
+            <li><strong>🌿 Precio de venta 🌿</strong> <strong>$1,350,000,   
+                $12,000</strong> de apartado en efectivo.</li>
+            <li><strong>Categoría:</strong> casa en venta</li>
+            <li><strong>Ubicación:</strong> Real del Bosque  Tultitlan</li>
+            <li><strong>🍂 Distribución 🍂:</strong>
+                ✔️Espacio de sala-comedor 
+                ✔️Espacio de cocina 
+                ✔️1 patio de servicio 
+                ✔️1 cajón de estacionamiento 
+                ✔️4 Recamaras
+                ✔️4 baños completos </li>
+                <li><strong>✨ Equipamiento ✨:</strong>
+                    ✔️pisos cerámicos en toda la casa 
+                    ventanas de aluminio nuevas</li>
+                    <li><strong>💥 Formas de compra 💥:</strong>
+                        ✔️todos los créditos </li>
+            <!-- Agrega más características si es necesario -->
+          </ul>
+        </div>
+        <div class="map-container">
+          <div class="small-map" id="small-map2"></div>
+      </div>
+      </div>
+    <!-- Casa 2  -->
+</section>
+<section class="seccion" id="jaltenco-seccion">
+    <!-- Casa 1 en JALTENCO -->
+    <div class="casa">
+        <div class="carrusel-casa">
+          <img src="imgJaltenco/imgCasa1/img1.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img2.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img3.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img4.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img5.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img6.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img7.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img8.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img9.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img10.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img11.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img12.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img13.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img14.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img15.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img16.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img17.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img18.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img19.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img20.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img21.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <img src="imgJaltenco/imgCasa1/img22.jpeg" alt="Casa jaltenco 1 " class="casa-imagen">
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+      
+        <!-- Características de Casa 1 en JALTENCO -->
+        <div class="caracteristicas">
+          <h3>Características:</h3>
+          <ul>
+            <li><strong> 📍72m² de superficie de construcción 
+                📍65m de terreno.</strong></li>
+            <li><strong>✨ Precio de venta ✨</strong> $570,000.00</li>
+            <li><strong>Categoría:</strong> Departamento 3er nivel  en venta</li>
+            <li><strong>Ubicación:</strong> Jaltenco</li>
+            <li><strong>🌿 Distribución 🌿:</strong>
+                ✔️Espacio de sala-comedor 
+                ✔️Espacio de cocina 
+                ✔️1 patio de servicio 
+                ✔️1 cajón de estacionamiento 
+                ✔️2 Recamaras con espacio de closet
+                ✔️1 baño completo </li>
+                <li><strong>🍂 Equipamiento 🍂:</strong>
+                    ✔️protecciones en ventanas
+                    piso cerámico</li>
+                    <li><strong>🌠 Formas de compra 🌠:</strong>
+                        ✔️todos los créditos </li>
+            <!-- Agrega más características si es necesario -->
+          </ul>
+        </div>
+        <div class="map-container">
+          <div class="small-map" id="small-map3"></div>
+      </div>
+      </div>
+    <!-- Casa 2 en jaltenco -->
+</section>
+<section class="seccion" id="coacalco-seccion">
+    <!-- Casa 1 en COACALCO -->
+    <div class="casa">
+        <div class="carrusel-casa">
+          <img src="imgCoacalco/imgCasa1/img1.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img2.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img3.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img4.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img5.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img6.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img7.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img8.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img9.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img10.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img11.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img12.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img13.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img14.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img15.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img16.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img17.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img18.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img19.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img20.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img21.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img22.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img23.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img24.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img25.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img26.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img27.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img28.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img29.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img30.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img31.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img32.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img33.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img34.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img35.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img36.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img37.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img38.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img39.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img40.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa1/img41.jpeg" alt="Casa coacalco 1 " class="casa-imagen">
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+      
+        <!-- Características de Casa 1 en coacalco -->
+        <div class="caracteristicas">
+          <h3>Características:</h3>
+          <ul>
+            <li><strong> 📍180m² de superficie de construcción 
+                📍310m de terreno.</strong></li>
+            <li><strong>✨ Precio de venta ✨</strong> $4200,000</li>
+            <li><strong>Categoría:</strong> casa en venta</li>
+            <li><strong>Ubicación:</strong> Colonia ejidal Coacalco </li>
+            <li><strong>🌿 Distribución 🌿:</strong>
+                ✔️Espacio de sala-comedor 
+                ✔️Espacio para colocar Medio baño
+                ✔️Espacio de cocina 
+                ✔️1 patio de servicio 
+                ✔️6 cajón de estacionamiento 
+                ✔️3 Recamaras con espacio de closet
+                ✔️3 baño completo </li>
+                <li><strong>🍂 Equipamiento 🍂:</strong>
+                    ✔️construcción totalmente nueva </li>
+                    <li><strong>🌠 Formas de compra 🌠:</strong>
+                        ✔️solo contado </li>
+            <!-- Agrega más características si es necesario -->
+          </ul>
+        </div>
+        <div class="map-container">
+          <div id="small-map4" class="small-map"></div>
+      </div>
+      </div>
+    <!-- Casa 2 en coacalco -->
+    <div class="casa">
+        <div class="carrusel-casa">
+          <img src="imgCoacalco/imgCasa2/img1.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img2.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img3.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img4.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img5.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img6.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img7.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img8.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img9.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img10.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img11.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img12.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img13.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img14.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img15.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img16.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img17.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img18.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img19.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img20.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img21.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img22.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img23.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img24.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img25.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img26.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img27.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img28.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img29.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img30.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img31.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img32.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img33.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img34.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img35.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img36.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          <img src="imgCoacalco/imgCasa2/img37.jpeg" alt="Casa coacalco 2 " class="casa-imagen">
+          
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+      
+        <!-- Características de Casa 2 en coacalco -->
+        <div class="caracteristicas">
+          <h3>Características:</h3>
+          <ul>
+            <li><strong> 📍130m² de superficie de construcción 
+                    📍70m² de terreno.</strong></li>
+            <li><strong>✨ Precio de venta ✨</strong> $950,000.00</li>
+            <li><strong>Categoría:</strong> casa en venta</li>
+            <li><strong>Ubicación:</strong> Coacalco Centro  hidalgo 24</li>
+            <li><strong>🌿 Distribución 🌿:</strong>
+                ✔️casa de 3 niveles
+                ✔️Espacio para colocar Medio baño
+                ✔️Espacio de sala
+                ✔️Espacio de comedor
+                ✔️Espacio de cocina 
+                ✔️1/2  baño
+                ✔️1 patio de servicio 
+                ✔️2 cajones de estacionamiento 
+                ✔️1er nivel 2 rec 2 baños
+                ✔️2do nivel 1 recamar con baño y terraza  </li>
+                <li><strong>🍂 Equipamiento 🍂:</strong>
+                    ✔️Protecciones en puertas y Ventanas</li>
+                    <li><strong>🌠 Formas de compra 🌠:</strong>
+                        ✔️estacionamiento para visitas 
+                        area de juegos
+                        seguridad 24 horas  y cámaras de vigilancia </li>
+            <!-- Agrega más características si es necesario -->
+          </ul>
+        </div>
+        <div class="map-container">
+          <div id="small-map5" class="small-map"></div>
+      </div>
+      </div>
+</section>
+    <footer class="footer container">
+        <div class="footer-content">
+            <div class="footer-form">
+                <h2>Contactanos</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input class="campo" type="text" id="nombre" placeholder="Nombre">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input class="campo" type="email" id="correo" placeholder="Correo">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="campo" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+            
+                    <input class="btn-2" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="footer-txt">
+              <div class="social-icons">
+                  <p>
+                      <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5550982772" target="_blank">5550982772</a>
+                  </p>
+                  <p>
+                      <i class="far fa-envelope"></i> atencionaclientes@hogaresenconcretosyd.com
+                  </p>
+                  <p>
+                      <i class="fas fa-map-marker-alt"></i> Calle Verdines 55,
+                      Col. Parque Residencial Coacalco,
+                      Coacalco, 55720, México
+                  </p>
+                  <p>
+                      <a href="https://www.facebook.com/alan.bay.10?mibextid=ZbWKwL" target="_blank">
+                          <i class="fab fa-facebook"></i> Síguenos en Facebook
+                      </a>
+                  </p>
+              </div>
+              <div id="map"></div>
+          </div>
+      
+            </div>
+        </div>
+        <script>
+             // Inicializa el mapa
+             var map = L.map('map').setView([19.619591, -99.083116], 17);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
+
+    // marcador con las coordenadas especificadas
+    var marker = L.marker([19.619591, -99.083116]).addTo(map); //Hogares en concreto 
+
+     //personalizar el marcador con un ícono o una descripción
+     var marker = L.marker([19.619591, -99.083116], {
+         icon: L.icon({
+             iconUrl: 'imagenes/Img.jpg',
+            iconSize: [32, 32]
+         }),
+         title: 'Hogares en concreto'
+     }).addTo(map);
+  // Inicializa el mapa pequeño en la sección de características
+        var smallMap1 = L.map('small-map1').setView([19.686325, -99.103454], 17); //casa 1 tultepec
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(smallMap1);
+        var smallMarker1 = L.marker([19.686325, -99.103454]).addTo(smallMap1);
+        // Inicializa el mapa pequeño en la sección de características
+        var smallMap2 = L.map('small-map2').setView([19.616099, -99.137645], 17); //casa 2 tultitlan
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(smallMap2);
+        var smallMarker2 = L.marker([19.616099, -99.137645]).addTo(smallMap2);
+        // Inicializa el mapa pequeño en la sección de características
+        var smallMap3 = L.map('small-map3').setView([19.661985, -99.065615], 17); //casa 3 jaltenco
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(smallMap3);
+        var smallMarker3 = L.marker([19.661985, -99.065615]).addTo(smallMap3);
+        // Inicializa el mapa pequeño en la sección de características
+        var smallMap4 = L.map('small-map4').setView([19.624235, -99.112022], 17); //casa 4 coacalco1
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(smallMap4);
+        var smallMarker4 = L.marker([19.624235, -99.112022]).addTo(smallMap4);
+        // Inicializa el mapa pequeño en la sección de características
+        var smallMap5 = L.map('small-map5').setView([19.631818, -99.101917], 17); //casa 5 coacalco2
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(smallMap5);
+        var smallMarker5 = L.marker([19.631818, -99.101917]).addTo(smallMap5);
+        </script>
+    </footer>
+
+
+
+
+    <script src="productos.js"></script>
+      <!--API DE CHAT-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/652f316ba84dd54dc482563d/1hd05i3i5';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+<script>
+    $(document).ready(function(){
+      // Inicializa el carrusel de imágenes
+      $('.carrusel-casa').slick({
+        // Opciones de configuración aquí
+        slidesToShow: 1, // Número de imágenes a mostrar a la vez
+        slidesToScroll: 1, // Número de imágenes para avanzar
+        autoplay: true, // Reproducción automática
+        autoplaySpeed: 800, // Velocidad de reproducción automática en milisegundos
+        // Puedes personalizar más opciones según tus necesidades
+      });
+    });
+  </script>
+
+</body>
+
+</html>
